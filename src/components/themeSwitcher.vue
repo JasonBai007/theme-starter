@@ -27,4 +27,11 @@ body {
   filter: invert(0.9) hue-rotate(180deg);
   mix-blend-mode: hard-light; // 更加鲜亮
 }
+
+// 监听手机端是否开启：深色模式
+@media (prefers-color-scheme: dark) {
+  html {
+    filter: invert(0.9) hue-rotate(180deg);
+  }
+}
 </style>
