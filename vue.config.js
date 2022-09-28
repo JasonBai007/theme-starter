@@ -5,6 +5,7 @@ const forElementUI = require("webpack-theme-color-replacer/forElementUI");
 
 module.exports = defineConfig({
   transpileDependencies: true,
+  outputDir: "docs",
   configureWebpack: {
     devServer: {
       host: "localhost",
