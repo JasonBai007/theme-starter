@@ -2,7 +2,8 @@
   <div class="home">
     <el-card class="box-card">
       <div slot="header" class="header-wrap">
-        <span>切换主题</span>
+        <!-- 切换白条和黑夜模式 -->
+        <themeSwitcher />
         <!-- 使用主题切换组件 -->
         <themePicker />
       </div>
@@ -18,12 +19,14 @@
 </template>
   
   <script>
+import themeSwitcher from "@/components/themeSwitcher.vue";
 import themePicker from "@/components/themePicker.vue";
 
 export default {
   name: "home",
   components: {
     themePicker,
+    themeSwitcher,
   },
 };
 </script>
