@@ -1,5 +1,7 @@
 const { defineConfig } = require("@vue/cli-service");
 
+// 换肤插件
+// https://github.com/hzsrc/webpack-theme-color-replacer
 const ThemeColorReplacer = require("webpack-theme-color-replacer");
 const forElementUI = require("webpack-theme-color-replacer/forElementUI");
 
@@ -12,20 +14,15 @@ module.exports = defineConfig({
       host: "localhost",
     },
   },
+  // 换肤配置
   chainWebpack: (config) => {
-    // 自定义换肤
     config
       .plugin("webpack-theme-color-replacer")
       .use(ThemeColorReplacer)
       .tap((options) => {
-        const matchColors = [];
-        const data = ["#409EFF", "#52C41A", "#FAAD14", "#F5222D", "#999999"];
-        data.forEach((item) => {
-          matchColors.push(...forElementUI.getElementUISeries(item));
-        });
         options[0] = {
           fileName: "css/theme-colors-[contenthash:8].css",
-          matchColors: matchColors,
+          matchColors: forElementUI.getElementUISeries("#409EFF"),
           changeSelector: forElementUI.changeSelector,
           isJsUgly: process.env.NODE_ENV !== "development",
         };
