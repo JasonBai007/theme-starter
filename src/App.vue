@@ -1,31 +1,30 @@
 <template>
   <div id="app">
-    <el-button type="primary">adsfads</el-button>
-    <el-button type="success">adsfads</el-button>
-    <el-button type="warning">adsfads</el-button>
-    <el-button type="danger">adsfads</el-button>
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <home></home>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import home from "@/views/home.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    home,
+  },
+};
 </script>
 
 <style lang="scss">
+body {
+  margin: 0;
+  height: 100vh;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  height: 100%;
 }
 </style>
