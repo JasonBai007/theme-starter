@@ -2,7 +2,7 @@
   <el-color-picker v-model="mainColor" size="small" @change="changeColor"></el-color-picker>
 </template>
 <script>
-import { changeThemeColor, curColor } from "@/utils/theme";
+import { curColor, changeThemeColor } from "@/utils/theme";
 export default {
   name: "themePicker",
   data() {
