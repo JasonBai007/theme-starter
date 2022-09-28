@@ -5,6 +5,11 @@ const forElementUI = require("webpack-theme-color-replacer/forElementUI");
 
 module.exports = defineConfig({
   transpileDependencies: true,
+  configureWebpack: {
+    devServer: {
+      host: "localhost",
+    },
+  },
   chainWebpack: (config) => {
     // 自定义换肤
     config
