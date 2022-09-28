@@ -90,8 +90,8 @@ initThemeColor();
 5. 复制 `themePicker.vue` 和 `themeSwitcher.vue` 到自己的项目 `/src/components/` 下
 
 ```sh
-themePicker.vue ----- 根据选择的颜色切换整个项目的主题色
-themeSwitcher.vue --- 开启或关闭暗黑模式
+themePicker.vue ----- 根据选择的颜色切换整个项目的主题色，只改变主题色颜色族
+themeSwitcher.vue --- 开启或关闭暗黑模式，可跟随手机的暗黑模式
 ```
 
 6. 在需要换肤的页面中引入以上组件即可
