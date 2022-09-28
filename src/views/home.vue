@@ -5,9 +5,9 @@
       <p>Vue-Element-Theme-Changer</p>
       <el-card class="box-card">
         <div slot="header" class="header-wrap">
-          <!-- 切换白条和黑夜模式 -->
+          <!-- 切换暗黑模式 -->
           <themeSwitcher />
-          <!-- 使用主题切换组件 -->
+          <!-- 切换主题色 -->
           <themePicker />
         </div>
         <div class="wrap">
@@ -22,7 +22,7 @@
   </div>
 </template>
   
-  <script>
+<script>
 import themeSwitcher from "@/components/themeSwitcher.vue";
 import themePicker from "@/components/themePicker.vue";
 

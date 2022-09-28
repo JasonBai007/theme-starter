@@ -22,7 +22,7 @@ module.exports = defineConfig({
       .tap((options) => {
         options[0] = {
           fileName: "css/theme-colors-[contenthash:8].css",
-          matchColors: forElementUI.getElementUISeries("#409EFF"),
+          matchColors: forElementUI.getElementUISeries("#409EFF"), // 根据默认主题色生成从深到浅一系列色值
           changeSelector: forElementUI.changeSelector,
           isJsUgly: process.env.NODE_ENV !== "development",
         };
