@@ -10,17 +10,7 @@
 
 ```
 npm install
-```
-
-### Compiles and hot-reloads for development
-
-```
 npm run serve
-```
-
-### Compiles and minifies for production
-
-```
 npm run build
 ```
 
@@ -97,7 +87,12 @@ import { initThemeColor } from "./utils/theme";
 initThemeColor();
 ```
 
-5. 复制 `themePicker.vue`（根据选择的颜色切换整个项目的主题色） 和 `themeSwitcher.vue`（开启或关闭暗黑模式） 到自己的项目 `/src/components/` 下
+5. 复制 `themePicker.vue` 和 `themeSwitcher.vue` 到自己的项目 `/src/components/` 下
+
+```sh
+themePicker.vue ----- 根据选择的颜色切换整个项目的主题色
+themeSwitcher.vue --- 开启或关闭暗黑模式
+```
 
 6. 在需要换肤的页面中引入以上组件即可
 
